@@ -2,9 +2,6 @@ const CACHE_NAME = 'jaftchat-v1';
 const FILES_TO_CACHE = [
   '/',
   '/index.html',
-  '/style.css',
-  '/script.js', // change if you're using a different file
-  '/favicon.ico',
 ];
 
 self.addEventListener('install', event => {
