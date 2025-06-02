@@ -201,7 +201,7 @@
                 // Add contextual awareness
                 if (Math.random() > 0.7 && this.contextMemory.length > 1) {
                     const prevTopic = this.contextMemory[Math.floor(Math.random() * this.contextMemory.length)];
-                    response += ` This relates to our earlier discussion about ${this.extractSubject(prevTopic)}.`;
+                    response += ` Maybe check our earlier discussion about ${this.extractSubject(prevTopic)}.`;
                 }
 
                 // Add variation
@@ -226,9 +226,8 @@
             addReflection(response) {
                 const reflections = [
                     " What do you think about this perspective?",
-                    " I'm curious to hear your thoughts on this.",
-                    " This raises interesting questions, doesn't it?",
-                    " How does this align with your understanding?",
+                    " I love my great intelligence that could come up with this.",
+                    " I really like this. Do you too?",
                     " I find this particularly fascinating."
                 ];
                 return response + this.randomChoice(reflections);
